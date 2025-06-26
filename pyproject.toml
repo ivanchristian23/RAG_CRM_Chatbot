@@ -1,0 +1,14 @@
+[project]
+name = "rag-crm-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "faiss-cpu>=1.11.0",
+    "fastapi>=0.115.13",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.4",
+    "sentence-transformers>=4.1.0",
+    "uvicorn>=0.34.3",
+]
