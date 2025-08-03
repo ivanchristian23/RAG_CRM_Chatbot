@@ -29,7 +29,7 @@ def load_vector_store(db_path="faiss_index"):
     with open(f"{db_path}.pkl", "rb") as f:
         return pickle.load(f)
 
-def search(query, k=3):
+def search(query, k=10):
     texts, index = load_vector_store()
     query_vec = model.encode([query])
     _, I = index.search(np.array(query_vec), k)

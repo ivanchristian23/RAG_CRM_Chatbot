@@ -5,7 +5,7 @@ while True:
     if question.lower() in ['exit', 'quit']:
         break
 
-    response = requests.post("http://localhost:8000/chat", json={"question": question})
+    response = requests.post("http://192.168.10.9/generate", json={"question": question})
 
     if response.status_code == 200:
         print("Bot:", response.json()["response"])
